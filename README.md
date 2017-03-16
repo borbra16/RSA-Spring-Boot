@@ -5,7 +5,7 @@ RSA-Encryption Java Spring-Boot Application packaged as ".war"-File.
 
 First of all: 
 If the Application is running as a unikernel, the file has to be uploaded to the unikernel before the enrcyption.
-This can be done via the OSv-Dashboard, with the REST-commands (File-upload).
+This can be done via the OSv-Dashboard (Port: 8000), with the REST-commands (File-upload).
 
 1.) Get information about the application-commands:
 http://instance-ip:8081/rsa-0.0.1-SNAPSHOT/encryption/getInformation
