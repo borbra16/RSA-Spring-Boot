@@ -1,5 +1,5 @@
 # RSA-Spring-Boot-Unikernel
-RSA-Encryption Java Spring-Boot Application
+RSA-Encryption Java Spring-Boot Application packaged as ".war"-File.
 
 (Application running as "UniK"-Unikernel)
 
