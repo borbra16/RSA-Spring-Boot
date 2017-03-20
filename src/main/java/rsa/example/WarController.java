@@ -205,23 +205,23 @@ public class WarController {
 			decryptKey = ea.advancedEuklid(ggtAr);
 			
 			//Public-Keys und Private-Key werden in ein txt-File geschrieben
-			pw = new PrintWriter(new FileOutputStream("/home/boris/Documents/RSA_Files/keys.txt"));
-			pw.println("Public Key - e: " + e);
-			pw.println("Public Key - n: " + n);
+			//pw = new PrintWriter(new FileOutputStream("/home/boris/Documents/RSA_Files/keys.txt"));
+			//pw.println("Public Key - e: " + e);
+			//pw.println("Public Key - n: " + n);
 			
 			//Abfrage ob d < 0 ist, falls ja muss phi(n) dazu-addiert werden
 			if(decryptKey.compareTo(BigInteger.ZERO)==-1)
 			{
 				tempDecryptKey = decryptKey.add(phi);
-				pw.println("Private Key - d: " + tempDecryptKey);
+				//pw.println("Private Key - d: " + tempDecryptKey);
 			}
 			else
 			{
-				pw.println("Private Key - d: " + decryptKey);
+				//pw.println("Private Key - d: " + decryptKey);
 			}
 			sb.append("\n");
 			sb.append("BitRange of Public-Key set to: " + range);
-			pw.close();
+			//pw.close();
 			return sb.toString();
 		}
 		catch(Exception ex)
